@@ -22,7 +22,7 @@ app.get("/api/songs", async (request, response) => {
   response.send(await db.collection("songs").find({}).toArray());
 });
 
-app.use(express.static(path.join(__dirname, "../../FrontEnd/dist/")));
+app.use(express.static(path.join(__dirname, "../FrontEnd/dist/")));
 
 app.get(/^\/(?!api).*/, (req, res) => {
   res.sendFile(path.join(__dirname, "../FrontEnd/dist/index.html"));
