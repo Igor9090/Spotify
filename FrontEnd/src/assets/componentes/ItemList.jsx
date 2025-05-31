@@ -1,5 +1,5 @@
 import React from 'react'
-import SingleItem from './singleItem'
+import SingleItem from './SingleItem'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
 

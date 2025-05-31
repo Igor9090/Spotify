@@ -1,7 +1,7 @@
 import React from 'react'
 import ItemList from "./ItemList"
-import { artistArray } from '../database/artists'
-import { songsArray } from '../database/songs'
+import { artistArray } from '../database/artists.js'
+import { songsArray } from '../database/songs.js'
 
 const Main = ({ type }) => {
   return (

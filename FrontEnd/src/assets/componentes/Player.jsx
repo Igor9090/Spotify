@@ -2,7 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay, faCirclePause, faBackwardStep, faForwardStep } from '@fortawesome/free-solid-svg-icons';
 import { Link, useParams } from 'react-router-dom';
-import { songsArray } from '../database/songs';
+import { songsArray } from '../database/songs.js';
 import { useRef, useState, useEffect } from 'react';
 
 const formatTime = (timeInSeconds) => {
