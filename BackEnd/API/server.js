@@ -25,7 +25,7 @@ app.get("/api/songs", async (request, response) => {
 app.use(express.static(path.join(__dirname, "../../FrontEnd/dist/")));
 
 app.get(/^\/(?!api).*/, (req, res) => {
-  res.sendFile(path.join(__dirname, "../../FrontEnd/dist/index.html"));
+  res.sendFile(path.join(__dirname, "../FrontEnd/dist/index.html"));
 });
 
 
